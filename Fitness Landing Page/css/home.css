@@ -1,0 +1,146 @@
+#main{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    margin: 12px;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+h4{
+    margin: 4px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+/* Button */
+/* From Uiverse.io by Yaya12085 */ 
+#trial{
+  border: none;
+  display: flex;
+  padding: 0.6rem 2rem;
+  background-color: var(--prime-color);
+  color: #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 0.75rem;
+  box-shadow: 0 4px 6px -1px var(--prime-color)31, 0 2px 4px -1px var(--prime-color)17;
+  transition: all 0.6s ease;
+  margin: 24px;
+  margin-top: 42px;
+}
+
+#trial:hover {
+  box-shadow: 0 10px 15px -3px var(--prime-color)4f, 0 4px 6px -2px var(--prime-color)17;
+}
+
+#trial:focus,
+#trial:active {
+  opacity: 0.85;
+  box-shadow: none;
+}
+
+/* Social */
+#social{
+    display: flex;
+    gap: 8px;
+    margin: 24px;
+}
+#social button{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    filter: invert(1);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dedede;
+    transition: transform 0.2s ease;
+    transform: translateY(0px);
+}
+#social button:hover{
+    transition: transform 0.2s ease;
+    transform: translateY(-2px);
+}
+#social button:active, #social button:focus{
+    transition: all 0.3s ease;
+    background-color: var(--opo-color); /* Invert of primary */
+    border-color: var(--opo-color);
+}
+#email{
+    background-image: url('../assets/email.png');
+}
+#linkedin{
+    background-image: url('../assets/linkedin.png');
+}
+#twitter{
+    background-size: 20%;
+    background-image: url('../assets/twitter.png');
+}
+#youtube{
+    background-image: url('../assets/youtube.png');
+}
+
+/* Benefits */
+#benefits{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+#benefits h3{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-align: center;
+    width: 95px;
+}
+
+/* Responsive */
+@media(min-width: 751px){
+    h1{
+        font-size: 60px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    #benefits{
+        gap: 24px;
+    }
+    #benefits h3{
+        font-size: 28px;
+        width: 130px;
+    }
+    #social{
+        transform: scale(1.25);
+        gap: 16px;
+    }
+    #trial{
+        transform: scale(1.25);
+    }
+}
+@media(min-width: 950px){
+    h1{
+        font-size: 80px;
+    }
+    h4{
+        font-size: 26px;
+    }
+    #benefits h3{
+        font-size: 32px;
+        width: 230px;
+    }
+}
