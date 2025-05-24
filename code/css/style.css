@@ -7,14 +7,14 @@
     font-family: Ancizar Sans;
 }
 .wrapper{
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
 }
 #main{
     flex: 1;
     padding: 8px;
-    width: 100vw;
+    width: 100%;
 }
 body{
     margin: 0px;
